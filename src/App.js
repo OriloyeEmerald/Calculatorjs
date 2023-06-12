@@ -12,7 +12,7 @@ function App() {
 
 
   const addText = (val) => {
-    setText((text) => [...text, val + " "])
+    setText((text) => [...text, val])
   }
   
 
@@ -36,8 +36,8 @@ function App() {
            <Button symbol={"/"} handleClick={addText} color={"#f2a33c"}/>
          </div>
          <div className='btn-row'>
-           <Button symbol={"7"} handleClick={addText}/>
-           <Button symbol={"8"} handleClick={addText}/>
+           <Button symbol={7} handleClick={addText}/>
+           <Button symbol={8} handleClick={addText}/>
            <Button symbol={"9"} handleClick={addText}/>
            <Button symbol={"*"} handleClick={addText} color={"#f2a33c"}/>
          </div>
